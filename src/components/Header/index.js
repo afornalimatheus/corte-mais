@@ -1,5 +1,7 @@
 import * as React from "react";
 import "../../styles/index.css"
+import Logo from "../../../public/logo.png"
+import Banner from "../../../public/capa.jpg"
 
 const Header = () => {
     return (
@@ -20,7 +22,7 @@ const Header = () => {
                           <div class="flex items-center justify-between w-full md:w-auto">
                             <a href="#">
                               <span class="sr-only">CorteMais</span>
-                              <img class="h-8 w-auto sm:h-10 logo" src="../../logo.png" />
+                              <img class="h-8 w-auto sm:h-10 logo" src={Logo} />
                             </a>
                             <div class="-mr-2 flex items-center md:hidden">
                               <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
@@ -86,7 +88,7 @@ const Header = () => {
                       </p>
                       <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                         <div class="rounded-md shadow">
-                          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 button">
                             FALE CONOSCO
                           </a>
                         </div>
@@ -101,8 +103,7 @@ const Header = () => {
                 </div>
               </div>
               <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                {/* <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80" alt="" /> */}
-                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="../../capa.jpg" alt="" />
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={Banner} alt="" />
               </div>
             </div>
           </div>
