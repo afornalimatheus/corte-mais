@@ -1,7 +1,7 @@
 import * as React from "react";
 import "../../styles/index.css"
-import Logo from "../../../public/logo.png"
-import Banner from "../../../public/capa.jpg"
+import Logo from "../../images/logo.png"
+import Banner from "../../images/capa.jpg"
 
 const Header = () => {
     return (
@@ -22,7 +22,7 @@ const Header = () => {
                           <div class="flex items-center justify-between w-full md:w-auto">
                             <a href="#">
                               <span class="sr-only">CorteMais</span>
-                              <img class="h-8 w-auto sm:h-10 logo" src={Logo} />
+                              <img class="h-8 w-auto sm:h-10 logo" src={Logo} alt="Logo da empresa CorteMais" />
                             </a>
                             <div class="-mr-2 flex items-center md:hidden">
                               <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
@@ -103,7 +103,7 @@ const Header = () => {
                 </div>
               </div>
               <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={Banner} alt="" />
+                <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={Banner} alt="Imagem de capa" />
               </div>
             </div>
           </div>
